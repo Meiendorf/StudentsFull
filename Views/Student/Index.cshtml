@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Students.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Студенты</h2>
+@{await Html.RenderPartialAsync("_StudentsList", Model);}

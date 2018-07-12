@@ -1,0 +1,24 @@
+﻿@using Students.Data
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div class="page-header" style="text-align : center">
+        Студенты
+    </div>
+    @{await Html.RenderPartialAsync("_StudentsList", ViewBag.Students as List<Student>);}
+    <div class="page-header" style="text-align : center">
+        Группы
+    </div>
+    @{await Html.RenderPartialAsync("_GroupList", ViewBag.Groups as List<Group>);}
+    <div class="page-header" style="text-align : center">
+        Пары
+    </div>
+    @{await Html.RenderPartialAsync("_PairsList", ViewBag.Pairs as List<Pair>);}
+    <div class="page-header" style="text-align : center">
+        Профессора
+    </div>
+
+    @{await Html.RenderPartialAsync("_ProfessorsList", ViewBag.Professors as List<Professor>);}
+</div>

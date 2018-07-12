@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Students.Models.Pair>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Пары</h2>
+
+@{await Html.RenderPartialAsync("_PairsList", Model);}

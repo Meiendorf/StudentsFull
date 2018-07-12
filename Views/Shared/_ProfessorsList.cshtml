@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Students.Models.Professor>
+
+<div class="list-div">
+    <table class="table-condensed">
+        <tr>
+            <th>Id</th>
+            <th>Имя</th>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <th>Посмотреть</th>}
+            @if (ViewBag.IsAdmin)
+            {
+                <th>Редактировать</th>
+                <th>Удалить</th>
+            }
+        </tr>
+        @foreach (var professor in Model)
+        {
+            <tr>
+                <td>@professor.Id</td>
+                <td>@professor.Name</td>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td>
+                        <button type="button" class="btn-success">
+                            <a class="btn-success" asp-action="Details" asp-controller="Professors" asp-route-id="@professor.Id">
+                                Посмотреть
+                            </a>
+                        </button>
+                    </td>
+                }
+                @if (ViewBag.IsAdmin)
+                {
+                    <td>
+                        <button type="button" class="btn-warning">
+                            <a class="btn-warning" asp-action="Edit" asp-controller="Professors" asp-route-id="@professor.Id">
+                                Редактировать
+                            </a>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn-danger">
+                            <a class="btn-danger" asp-action="Delete" asp-controller="Professors" asp-route-id="@professor.Id">
+                                Удалить
+                            </a>
+                        </button>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+    @if (ViewBag.IsAdmin)
+    {
+        <button type="button" class="btn-primary">
+            <a class="btn-primary" asp-controller="Professors" asp-action="Create">Создать</a>
+        </button>
+    }
+</div>

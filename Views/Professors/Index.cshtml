@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Students.Models.Professor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Профессора</h2>
+@{await Html.RenderPartialAsync("_ProfessorsList", Model);}

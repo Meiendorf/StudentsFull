@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Students.Models.Group>
+
+<div class="list-div">
+    <table class="table-condensed">
+        <tr>
+            <th>Id</th>
+            <th>Имя группы</th>
+            <th>Активность</th>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <th>Посмотреть</th>}
+
+            @if (ViewBag.IsAdmin)
+            {
+                <th>Редактировать</th>
+                <th>Удалить</th>
+            }
+        </tr>
+        @foreach (var group in Model)
+        {
+            <tr>
+                <td>@group.Id</td>
+                <td>@group.Name</td>
+                @if (group.Active)
+                {
+                    <td>Активна</td>
+                }
+                else { 
+                    <td>Не активна</td>
+                }
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td>
+                        <button type="button" class="btn-success">
+                            <a class="btn-success" asp-action="Details" asp-controller="Groups" asp-route-id="@group.Id">
+                                Посмотреть
+                            </a>
+                        </button>
+                    </td>
+                }
+                @if (ViewBag.IsAdmin)
+                {
+                    <td>
+                        <button type="button" class="btn-warning">
+                            <a class="btn-warning" asp-action="Edit" asp-controller="Groups" asp-route-id="@group.Id">
+                                Редактировать
+                            </a>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn-danger">
+                            <a class="btn-danger" asp-action="Delete" asp-controller="Groups" asp-route-id="@group.Id">
+                                Удалить
+                            </a>
+                        </button>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+    @if (ViewBag.IsAdmin)
+    {
+        <button type="button" class="btn-primary">
+            <a class="btn-primary" asp-controller="Groups" asp-action="Create">Создать</a>
+        </button>
+    }
+</div>

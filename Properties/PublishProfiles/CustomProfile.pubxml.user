@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbF4c7gPc70azPXPfK5NALgAAAAACAAAAAAAQZgAAAAEAACAAAACXdg7hbGdFwVUBh5FGeVDUf4rjmfPwRdRaGBbK2dI8QAAAAAAOgAAAAAIAACAAAACYDXn3gi/ryns6kMcybQPcXr2CuOPkmxZuMXMK6JcWbCAAAACQ3BnuWyPBUMT3N13S5qffq/ahTnTuLAXmpQ0lOVFd7EAAAABdwlBLWlSKPy7oWtEe9E2P2WuedmXWWniu8wvqnbL5aioJbwIbyeI/DCl6nqzTDGo2nMg6npCrx9Z8zUrAfOBH</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp-eu.site4now.net/site1</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>07/03/2018 00:34:09</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>07/03/2018 13:53:28</publishTime>
+    </File>
+    <File Include="Students.deps.json">
+      <publishTime>07/03/2018 14:21:36</publishTime>
+    </File>
+    <File Include="Students.dll">
+      <publishTime>07/03/2018 14:21:24</publishTime>
+    </File>
+    <File Include="Students.pdb">
+      <publishTime>07/03/2018 14:21:24</publishTime>
+    </File>
+    <File Include="Students.runtimeconfig.json">
+      <publishTime>07/03/2018 14:21:36</publishTime>
+    </File>
+    <File Include="Students.Views.dll">
+      <publishTime>07/03/2018 14:21:30</publishTime>
+    </File>
+    <File Include="Students.Views.pdb">
+      <publishTime>07/03/2018 14:21:30</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>07/03/2018 14:21:36</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>07/03/2018 13:50:37</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.min.css">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner1.svg">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner2.svg">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner3.svg">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.min.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/.bower.json">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/npm.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/.bower.json">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/.bower.json">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/.bower.json">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>07/02/2018 12:12:25</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Students.Models.Pair>
+
+<div class="list-div">
+    <table class="table-condensed">
+        <tr>
+            <th>Id</th>
+            <th>Дата</th>
+            <th>Группа</th>
+            <th>Профессор</th>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <th>Посмотреть</th>}
+            @if (ViewBag.IsAdmin)
+            {
+                <th>Редактировать</th>
+                <th>Удалить</th>
+            }
+        </tr>
+        @foreach (var pair in Model)
+        {
+            <tr>
+                <td>@pair.Id</td>
+                <td>@pair.Date.ToString()</td>
+                <td>@pair.Group.Name</td>
+                <td>@pair.Professor.Name</td>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td>
+                        <button type="button" class="btn-success">
+                            <a class="btn-success" asp-action="Details" asp-controller="Pairs" asp-route-id="@pair.Id">
+                                Посмотреть
+                            </a>
+                        </button>
+                    </td>
+                }
+                @if (ViewBag.IsAdmin)
+                {
+                    <td>
+                        <button type="button" class="btn-warning">
+                            <a class="btn-warning" asp-action="Edit" asp-controller="Pairs" asp-route-id="@pair.Id">
+                                Редактировать
+                            </a>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn-danger">
+                            <a class="btn-danger" asp-action="Delete" asp-controller="Pairs" asp-route-id="@pair.Id">
+                                Удалить
+                            </a>
+                        </button>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+    @if (ViewBag.IsAdmin)
+    {
+        <button type="button" class="btn-primary">
+            <a class="btn-primary" asp-controller="Pairs" asp-action="Create">Создать</a>
+        </button>
+    }
+</div>

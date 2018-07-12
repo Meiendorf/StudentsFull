@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Профиль</h2>
+<div>
+    <div class="page-header">
+        Вы вошли как @ViewBag.User.UserName
+    </div>
+    <form asp-action="LogOff" asp-controller="Accounts" method="post" id="logoutForm">
+        <button class="btn-warning">
+            Выход
+        </button>
+    </form>
+</div>

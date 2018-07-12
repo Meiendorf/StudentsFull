@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Students.Models.Student>
+
+<div class="list-div">
+    <table class="table-condensed">
+        <tr>
+            <th>Id</th>
+            <th>Имя</th>
+            <th>Имя группы</th>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <th>Посмотреть</th>}
+            @if (ViewBag.IsAdmin)
+            {
+                <th>Редактировать</th>
+                <th>Удалить</th>
+            }
+        </tr>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.Group.Name</td>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td>
+                        <button type="button" class="btn-success">
+                            <a class="btn-success" asp-action="Details" asp-controller="Student" asp-route-id="@student.Id">
+                                Посмотреть
+                            </a>
+                        </button>
+                    </td>
+                }
+                @if (ViewBag.IsAdmin)
+                {
+                    <td>
+                        <button type="button" class="btn-warning">
+                            <a class="btn-warning" asp-action="Edit" asp-controller="Student" asp-route-id="@student.Id">
+                                Редактировать
+                            </a>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn-danger">
+                            <a class="btn-danger" asp-action="Delete" asp-controller="Student" asp-route-id="@student.Id">
+                                Удалить
+                            </a>
+                        </button>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+    @if (ViewBag.IsAdmin)
+    {
+        <button type="button" class="btn-primary">
+            <a class="btn-primary" asp-controller="Student" asp-action="Create">Создать</a>
+        </button>
+    }
+</div>
