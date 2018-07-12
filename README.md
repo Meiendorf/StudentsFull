@@ -1,5 +1,5 @@
 # Students diary
-###Description
+### Description
 
 ASP.NET Core web app, which repsresent electronic students diary.
 
@@ -7,11 +7,11 @@ ASP.NET Core web app, which repsresent electronic students diary.
 
 First of all you need to install latest version of .Net Core framework, you can find it [here](https://www.microsoft.com/net/download/ "here"), then just download repository.
 
-###Configuration
+### Configuration
 
 All configutation settings are stored in appsettings.json file.
 
-###Deploying
+### Deploying
 
 To run application, navigate to project folder and type :
 > <p style="color : #37A0F4">dotnet run</p>
